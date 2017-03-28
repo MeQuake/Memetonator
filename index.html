@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <title>Memetonator - Create your meme</title>
+
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Memetonator</a>
+      </div>
+      <div id="navbar" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Home</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div>
+      <h1>Memetonator</h1>
+      <div class="memetonator">
+        <form id="imageUpload">
+          <label class="btn btn-default">
+            <input id="my-file-selector" type="file" style="display:none;">
+            Upload image
+          </label>
+          <button type="button" id="refresh" class="btn btn-default">Refresh</button>
+          <button type="button" id="imageDownload" class="btn btn-default">Download</button>
+          <img id="imageSource" src="#" style="display:none;"/>
+        </form>
+        <canvas id="canvasOutput">
+        </div>
+      </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/memetonator.js"></script>
+  </body>
+  </html>
